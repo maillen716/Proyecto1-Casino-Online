@@ -1,247 +1,47 @@
-/* se aplica a todo el código */
 body {
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* tipografía */
-
-    background-color: #1a1a2e; /* color de fondo  */
-
-    color: #e0e0e0; /* color de texto */
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
     margin: 0;
-
-    padding: 20px;
-
-    display: flex;
-
-    justify-content: center;
-
 }
 
-/* ancho de pantalla (1728px a 1920px) */
-.container {
-
-    width: 90%;
-
-    max-width: 1600px; /* ancho máximo */
-
-    background-color: #162447; /* color del contenido, azul oscuro */
-
+.casino-container {
+    background-color: #162447;
     border-radius: 10px;
-
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-
-    padding: 20px 40px;
-
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-/* navegación */
-header {
-
-    border-bottom: 2px solid #e43f5a; /* línea de separación */
-
-    padding-bottom: 15px;
-
-    margin-bottom: 25px;
-
-    text-align: center;
-
+h1, h2, h3 {
+    color: #e43f5a;
 }
 
-header h1 {
-
-    color: #e43f5a; /* título principal */
-
-    font-size: 2.5em;
-
-    margin: 0;
-
-}
-
-nav ul {
-
-    list-style: none; /* quita los puntos de la lista */
-
-    padding: 0;
-
-    margin-top: 15px;
-
-    display: flex;
-
-    justify-content: center; /* centra los botones de navegación */
-
-    gap: 15px; /* espacio entre los botones */
-
-}
-
-nav a {
-
-    text-decoration: none; /* quita el subrayado de los links */
-
-    color: #ffffff;
-
+.btn-casino {
     background-color: #e43f5a;
-
-    padding: 10px 20px;
-
-    border-radius: 5px;
-
-    font-weight: bold;
-
-    transition: background-color 0.3s; /* transición suave al cambiar de color */
-
-}
-
-nav a:hover {
-
-    background-color: #b8324f; /* color al pasar el cursor */
-
-}
-
-/* formularios */
-.form-container {
-
-    background-color: #1f4068;
-
-    padding: 25px;
-
-    border-radius: 8px;
-
-    max-width: 500px;
-
-    margin: 20px auto; /* centra el formulario */
-
-}
-
-.form-group {
-
-    margin-bottom: 15px;
-
-}
-
-.form-group label {
-
-    display: block; /* hace que el label ocupe toda la línea */
-
-    margin-bottom: 5px;
-
-    font-weight: bold;
-
-}
-
-.form-group input {
-
-    width: 100%;
-
-    padding: 10px;
-
-    border-radius: 5px;
-
-    border: 1px solid #ddd;
-
-    box-sizing: border-box; /* asegura que el padding no aumente el ancho total */
-
-    background-color: #e0e0e0;
-
-    color: #1a1a2e;
-
-}
-
-button {
-
-    width: 100%;
-
-    padding: 12px;
-
-    background-color: #1b7fbd; /* Azul para acciones principales */
-
     color: white;
-
+    font-weight: bold;
     border: none;
-
-    border-radius: 5px;
-
-    font-size: 1.1em;
-
-    cursor: pointer;
-
-    transition: background-color 0.3s;
-
 }
 
-button:hover {
-
-    background-color: #156292;
-
-}
-
-/* tablas */
-table {
-
-    width: 100%;
-
-    border-collapse: collapse; /* une los bordes de las celdas */
-
-    margin-top: 20px;
-
-}
-
-th, td {
-
-    padding: 12px;
-
-    text-align: left;
-
-    border-bottom: 1px solid #333;
-
-}
-
-th {
-
-    background-color: #e43f5a;
-
+.btn-casino:hover {
+    background-color: #b8324f;
     color: white;
-
 }
 
-/* mesa de ruleta */
-.mesa-ruleta {
-
-    text-align: center;
-
-}
-
-.mesa-ruleta img {
-
-    max-width: 500px; /* para que la imagen no sea demasiado grande */
-
-    height: auto;
-
-    border-radius: 10px;
-
-}
-
-.estado-juego {
-
-    font-size: 1.5em;
-
-    font-weight: bold;
-
-    color: #1b7fbd; /* color azul para el estado */
-
-    margin: 15px 0;
-
-}
-
-.saldo {
-
-    font-size: 1.2em;
-
+.form-container {
     background-color: #1f4068;
+    padding: 25px;
+    border-radius: 8px;
+}
 
-    padding: 10px;
-
+.saldo-box {
+    background-color: #1f4068;
+    padding: 15px;
     border-radius: 5px;
-
-    display: inline-block; /* para que el fondo no ocupe todo el ancho */
-
+    display: inline-block;
+    font-size: 1.2em;
+    border: 1px solid #1b7fbd;
+    color: #fff;
 }
